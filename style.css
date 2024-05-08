@@ -1,0 +1,306 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+
+}
+.main{
+    display: flex;
+    background-color: black;
+    overflow: hidden;
+}
+.sidebar{
+    width: 32%;
+    background-color: #000000;
+}
+.side1{
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+.side1 i{
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+.side1 p{
+    font-weight: 500;
+    opacity: 0.7;
+}
+.side1 p:hover{
+    opacity: 1;
+}
+
+.side2{
+    background-color: #121212;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    height: 24.2rem;
+}
+
+.library{
+    display: flex;
+    justify-content: space-between;    
+    font-weight: 500;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+}
+.library img, .library i{
+    padding-right: 1rem;
+}
+.library p, .library span{
+    opacity: 0.7;
+}
+.library p:hover {
+    opacity: 1;
+}
+.badges{
+    display: flex;
+    justify-content: flex-start;
+}
+.badges button{
+    background-color: #232323;
+    color: white;
+    display: inline-block;
+    padding: 0.5em 1em; /* Adjust padding as needed */
+    border-radius: 50px; /* Half of the height */
+    border: none; /* No border */
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-right: 0.8rem;
+}
+.badges button:hover{
+    background-color: #343434;
+}
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top p{
+    font-size: 12px;
+    opacity: 0.7;
+    align-self: center;
+}
+.top p:hover{
+    transform: scale(1.05);
+    opacity: 1;
+}
+.top i{
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+.scrollside2{
+    height: 290px;
+    overflow: auto;
+    padding: 5px;
+    padding-right: 0;
+}
+.scroll {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 5px;
+
+}
+
+.info-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.info-container:hover{
+    background-color: #232323;
+    border-radius: 5px;
+}
+.info-container img{
+    padding: 4px;
+}
+.info {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.info span{
+    padding-bottom: 0.3rem;
+}
+.main-content{
+    flex: 1;
+    overflow: auto;
+    background-color: #121212;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    margin-left: 0;
+    height: 520px;
+    padding-top: 0;
+}
+
+.navbar{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    margin-top: 0;
+    padding-top: 0;
+}
+.navbar button{
+    background-color: #232323;
+    color: white;
+    display: inline-block;
+    padding: 0.5em 1em; /* Adjust padding as needed */
+    border-radius: 50px; /* Half of the height */
+    border: none; /* No border */
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 800;
+    margin-right: 0.8rem;
+}
+.navbar span {
+    background-color: #232323;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.container p{
+    font-size: 12px;
+}
+.container img{
+    width: 100%;
+    border-radius: 5px;
+}
+.container{
+    background-color: #232323;
+    width: 10rem;
+    /* height: 12rem; */
+    padding: 1rem 1rem 0 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+.abm1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+h2{
+    font-weight: 700;
+}
+@media screen and (max-width: 1020px){
+    .btn, .f2, .last{
+        display: none;
+    }
+}
+
+
+.music-player{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4.5rem;
+    background-color: #000000;
+    padding: 0.12rem 1rem;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.current:hover{
+    background-color: #000000;
+}
+
+.song{
+    width: 25%;
+}
+.player{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.5rem 0.5rem;
+}
+.settings{
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1rem;
+}
+.settings i{
+    padding-right: 0.6rem;
+    opacity: 0.7;
+}
+.settings i:hover{
+    opacity: 1;
+}
+.playericons{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+.progress-bar{
+    width: 70%;
+}
+.playericons img{
+    width: 1rem;
+    height: 1rem;
+    padding-right: 2rem;
+    opacity: 0.7;
+}
+.playericons img:hover{
+    opacity: 1;
+}
+.controlIcon{
+    transform: scale(2);
+    padding-left: 1rem;
+    opacity: 1;
+}
+.controlIcon:hover{
+    transform: scale(2.2);
+}
+.playerbar{
+    display: flex;
+    justify-content: space-around;
+}
+.playerbar p{
+    font-size: smaller;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #121212;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #232323;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
